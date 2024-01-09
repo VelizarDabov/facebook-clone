@@ -13,7 +13,8 @@
     "@heroicons/react": "^1.0.6",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-spinkit": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

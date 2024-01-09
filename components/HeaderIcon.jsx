@@ -1,7 +1,7 @@
 import React from "react";
 
 const HeaderIcon = ({ Icon, active }) => {
-    console.log(active)
+  
   return (
     <div className=" flex cursor-pointer items-center  text-gray-500 md:px-10 sm:h-12 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
       <Icon

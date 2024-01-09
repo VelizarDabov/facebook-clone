@@ -1,8 +1,7 @@
-"use client";
+// "use client";
 import Image from "next/image";
 import React from "react";
 import {
-  BallIcon,
   BellIcon,
   ChatIcon,
   ChevronDownIcon,
@@ -17,8 +16,12 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 import HeaderIcon from "./HeaderIcon";
+import { SignInButton, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+import RightContent from "./RightContent";
 
 const Header = () => {
+
+    const { isSignedIn, user, isLoaded } = useUser();
   return (
     <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
       {/* header left  */}
@@ -52,12 +55,8 @@ const Header = () => {
       {/* header right */}
       <div className="flex items-center sm:space-x-2 justify-end">
       
-           <p className="font-semibold whitespace-nowrap pr-3">Velizar Dabov</p>
-           <ViewGridIcon className="icon"/>
-            <ChatIcon className='icon' />
-            <BellIcon className="icon"/>
-            <ChevronDownIcon className="icon"/>
-
+      {!user ? ( <SignInButton afterSignInUrl="/" mode="modal"/>) : (<RightContent />)}
+           
         
       </div>
     </div>
