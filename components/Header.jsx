@@ -2,12 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import {
-  BellIcon,
-  ChatIcon,
-  ChevronDownIcon,
   HomeIcon,
   UserGroupIcon,
-  ViewGridIcon,
 } from "@heroicons/react/solid";
 import {
   FlagIcon,
@@ -22,6 +18,7 @@ import RightContent from "./RightContent";
 const Header = () => {
 
     const { isSignedIn, user, isLoaded } = useUser();
+
   return (
     <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
       {/* header left  */}

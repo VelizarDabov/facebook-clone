@@ -6,7 +6,8 @@ const nextConfig = {
           "assets.vogue.com",
           "m.media-amazon.com",
           "upload.wikimedia.org",
-          "links.papareact.com"
+          "links.papareact.com",
+          'scontent.fsof9-1.fna.fbcdn.net'
         ],
       },
 }

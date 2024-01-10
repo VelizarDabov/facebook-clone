@@ -1,6 +1,5 @@
 'use client'
 import Header from "@/components/Header";
-import Login from "@/components/Login";
 import Sidebar from "@/components/Sidebar";
 import { useUser } from "@clerk/nextjs";
 import Spinner from "react-spinkit";
@@ -10,13 +9,13 @@ export default function Home() {
   return (
     <main>
       <Header />
-      {!isLoaded &&   ( <div className='flex items-center justify-center h-screen'>
+      {/* {!isLoaded &&   ( <div className='flex items-center justify-center h-screen'>
     <Spinner name="ball-spin-fade-loader" color="blue" fadeIn="none" />
-    </div>)}
-      {user &&
+    </div>)} */}
+      {/* {user &&
        (<Sidebar />)
-      }
-     
+      } */}
+     <Sidebar />
     </main>
   );
 }
